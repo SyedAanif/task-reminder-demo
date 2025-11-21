@@ -1,0 +1,7 @@
+--INSERT INTO STUDENT (NAME, ROLL_NUMBER) VALUES ('foo', 10);
+--INSERT INTO STUDENT (NAME, ROLL_NUMBER) VALUES ('bar', 100);
+--INSERT INTO STUDENT (NAME, ROLL_NUMBER) VALUES ('xyz', 110);
+INSERT INTO task (naam, roll) VALUES ('foo', 10);
+INSERT INTO task (naam, roll) VALUES ('bar', 110);
+INSERT INTO task (naam, roll) VALUES ('xyz', 20);
+
