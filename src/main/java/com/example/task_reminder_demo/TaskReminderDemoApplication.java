@@ -75,3 +75,20 @@ public class TaskReminderDemoApplication implements ApplicationListener<Applicat
 //
 
 
+// git checkout main
+// git pull origin main
+
+// git checkout -b feature/feature-name
+// git checkout -b fix/fix-name
+// git checkout -b enhancement/enhancement-name
+
+// git status
+// git add .
+// git commit -m "commit-message"
+// git push -u origin feature/mail-sender
+// Raise Pull/Merge Request(PR/MR)
+
+// SMTP - Simple Mail Transfer Protocol
+// gmail, yahoo-mail, smtp
+// fake smtp generators: https://github.com/gessnerfl/fake-smtp-server
+
