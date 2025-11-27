@@ -4,6 +4,14 @@ ses:
 customName: batchJava
 
 spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
   h2:
     console:
       enabled: true
