@@ -4,6 +4,10 @@ import com.example.task_reminder_demo.entity.Student;
 import com.example.task_reminder_demo.models.StudentDto;
 import com.example.task_reminder_demo.service.DummyService;
 import com.example.task_reminder_demo.service.StudentService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
@@ -11,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "students")
+@Tag(name = "my-tagged-controller", description = "some awesome class level description")
 public class StudentController {
 
     // OPENAPI, Swagger
@@ -23,6 +28,17 @@ public class StudentController {
         this.dummyService = dummyService;
     }
 
+    @Operation(
+            summary = "Get all students",
+            description = "returns list of students",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Good Call",
+                            content = @Content(mediaType = "application/json")
+                    )
+            }
+    )
     @GetMapping
     public List<Student> getAllStudents() {
         // debug
